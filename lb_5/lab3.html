@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Использование inline-block при построении колонок</title>
+<style>
+        #left {
+            background: #ccf;
+            width: 200px;
+        }
+
+        #right {
+            background: #fcc;
+            width: 200px;
+        }
+
+        #center {
+            width: 400px;
+            background: #cfc;
+
+        }
+
+        .container div {
+            display: inline-block;
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .container {
+            font-size: 0;
+            min-width: 800px;
+        }
+</style>
+</head>
+<body>
+	<div class="container">
+	<div id="left">left<br>left<br>left<br>left<br>left</div>
+	<div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
+	<div id="right">right<br>right<br>right<br>right</div>
+	</div>
+</body>
+</html>
