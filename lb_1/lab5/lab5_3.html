@@ -1,0 +1,50 @@
+<html lang="ru">
+
+<body cz-shortcut-listen="true">
+  <ul>
+    <li>Животные
+      <ul>
+        <li>Млекопитающие
+          <ul>
+            <li>Коровы</li>
+            <li>Ослы</li>
+            <li>Собаки</li>
+            <li>Тигры</li>
+          </ul>
+        </li>
+        <li>Другие
+          <ul>
+            <li>Змеи</li>
+            <li>Птицы</li>
+            <li>Ящерицы</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Рыбы
+      <ul>
+        <li>Аквариумные
+          <ul>
+            <li>Гуппи</li>
+            <li>Скалярии</li>
+          </ul>
+
+        </li>
+        <li>Морские
+          <ul>
+            <li>Морская форель</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    let lis = document.getElementsByTagName('li');
+    for (let i = 0; i < lis.length; i++) {
+            let text = lis[i].textContent.trim();
+      let nestedLis = lis[i].getElementsByTagName('li').length;
+lis[i].innerHTML =  nestedLis + " - " + lis[i].innerHTML;
+    }
+  </script>
+</body></html>
